@@ -11,7 +11,7 @@ stages:
         - Build Ship Server 1
   - Second Build Stage:
       jobs:
-        - Build Ship Server 1
+        - Build Ship Server 2
 
 Build Ship Server 1:
   tasks:
