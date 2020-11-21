@@ -1,26 +1,47 @@
 ---
 version: 2
-plan:
-  project-key: TS
-  name: Build the testName proyect
-  key: TN
-
 stages:
-  - First Build Stage:
-      jobs: 
-        - Build Ship Server 1
-  - Second Build Stage:
+  - Build the website:
       jobs:
-        - Build Ship Server 2
+        - Buildwebsite1
+        - Buildwebsite2
+  - Wait for confirmation:
+      manual: true # Will await for execution by user
+      jobs:
+        - Waitforconfirmation1
+        - Waitforconfirmation2
+  - Clean afterwards:
+      final: true # Will be executed even if previous results fail
+      jobs:
+        - Cleanafterwards1
+        - Cleanafterwards2
 
-Build Ship Server 1:
+Buildwebsite1:
   tasks:
-    - script:
-        - echo 'Hello world'
-        - echo 'Second tasks'
+    - script: |
+        echo "Buildwebsite1"
 
-Build Ship Server 2:
+Buildwebsite2:
   tasks:
-    - script:
-        - echo 'Hello world Ship Server 2'
-        - echo 'Second tasks of Ship server 2'
+    - script: |
+        echo "Buildwebsite2"
+
+Waitforconfirmation1:
+  tasks:
+    - script: |
+        echo "Waitforconfirmation1"
+
+Waitforconfirmation2:
+  tasks:
+    - script: |
+        echo "Waitforconfirmation2"
+
+Cleanafterwards1:
+  tasks:
+    - script: |
+        echo "Cleanafterwards1"
+
+Cleanafterwards2:
+  tasks:
+    - script: |
+        echo "Cleanafterwards2"

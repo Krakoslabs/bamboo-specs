@@ -1,4 +1,6 @@
 ---
-!include 'planA.yml'
----
-!include 'planB.yml'
+version: 2
+plan:
+  project-key: TESTFIRSTSPECS
+  name: Test my first specs
+  key: TN
