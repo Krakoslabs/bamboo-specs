@@ -27,7 +27,7 @@ Build Ship Server 2:
 ---
 version: 2
 plan:
-  project-key: MARS
+  project-key: MAR
   key: ROCKET
   name: Build the rockets
 
