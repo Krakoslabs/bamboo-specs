@@ -1,9 +1,9 @@
 ---
 version: 2
 plan:
-  project-key: ROCKET
-  name: Launch Rocket
-  key: LAUNCH
+  project-key: Test
+  name: TestName
+  key: TN
 
 stages:
   - First Build Stage:
