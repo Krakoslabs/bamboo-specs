@@ -1,30 +1,44 @@
 ---
 version: 2
 plan:
-  project-key: MAR
-  key: ROCKET
-  name: Build the MarcosTest proyect
+  project-key: TESTFIRSTSPECS
+  name: Test my second specs
+  key: TN2
 
-# List of plan's stages and jobs
 stages:
-  - Build the rocket stage:
-    - Build
+  - Build the website:
+      jobs:
+        - Buildwebsite1
 
-#Job definition
-Build:
+Buildwebsite1:
   tasks:
-    - script:
-        - mkdir -p falcon/red
-        - echo wings > falcon/red/wings
-        - sleep 1
-        - echo 'Built it'
-    - test-parser:
-        type: junit
-        test-results: '**/junit/*.xml' 
-  # Job's requirements
-  requirements:
-     - isRocketFuel
-  # Job's artifacts. Artifacts are shared by default.
-  artifacts:
-     - name: Red rocket built
-       pattern: falcon/red/wings
+  - script:
+      interpreter: SHELL
+      file: test.sh
+      argument: test1 test2
+      working-dir: scripts
+
+Buildwebsite2:
+  tasks:
+    - script: |
+        echo "Buildwebsite2"
+
+Waitforconfirmation1:
+  tasks:
+    - script: |
+        echo "Waitforconfirmation1"
+
+Waitforconfirmation2:
+  tasks:
+    - script: |
+        echo "Waitforconfirmation2"
+
+Cleanafterwards1:
+  tasks:
+    - script: |
+        echo "Cleanafterwards1"
+
+Cleanafterwards2:
+  tasks:
+    - script: |
+        echo "Cleanafterwards2"
