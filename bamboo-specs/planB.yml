@@ -1,5 +1,6 @@
 ---
 version: 2
+triggers: []
 plan:
   project-key: TESTFIRSTSPECS
   name: Test my second specs
