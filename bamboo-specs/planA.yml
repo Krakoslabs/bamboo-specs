@@ -11,12 +11,11 @@ stages:
         - Buildwebsite1
         - Buildwebsite2
   - Wait for confirmation:
-      manual: true # Will await for execution by user
+      manual: true
       jobs:
         - Waitforconfirmation1
         - Waitforconfirmation2
   - Clean afterwards:
-      final: true # Will be executed even if previous results fail
       jobs:
         - Cleanafterwards1
         - Cleanafterwards2
