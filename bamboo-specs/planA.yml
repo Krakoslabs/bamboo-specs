@@ -1,0 +1,26 @@
+---
+version: 2
+plan:
+  project-key: TS
+  name: TestName
+  key: TN
+
+stages:
+  - First Build Stage:
+      jobs: 
+        - Build Ship Server 1
+  - Second Build Stage:
+      jobs:
+        - Build Ship Server 2
+
+Build Ship Server 1:
+  tasks:
+    - script:
+        - echo 'Hello world'
+        - echo 'Second tasks'
+
+Build Ship Server 2:
+  tasks:
+    - script:
+        - echo 'Hello world Ship Server 2'
+        - echo 'Second tasks of Ship server 2'
