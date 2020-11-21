@@ -17,28 +17,3 @@ Buildwebsite1:
       file: test.sh
       argument: test1 test2
       working-dir: scripts
-
-Buildwebsite2:
-  tasks:
-    - script: |
-        echo "Buildwebsite2"
-
-Waitforconfirmation1:
-  tasks:
-    - script: |
-        echo "Waitforconfirmation1"
-
-Waitforconfirmation2:
-  tasks:
-    - script: |
-        echo "Waitforconfirmation2"
-
-Cleanafterwards1:
-  tasks:
-    - script: |
-        echo "Cleanafterwards1"
-
-Cleanafterwards2:
-  tasks:
-    - script: |
-        echo "Cleanafterwards2"
