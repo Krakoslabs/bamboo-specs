@@ -4,3 +4,5 @@ plan:
   project-key: TESTFIRSTSPECS
   name: Test my first specs
   key: TN
+
+!include 'planA.yml'
