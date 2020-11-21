@@ -2,7 +2,7 @@
 version: 2
 plan:
   project-key: TS
-  name: TestName
+  name: Build the testName proyect
   key: TN
 
 stages:

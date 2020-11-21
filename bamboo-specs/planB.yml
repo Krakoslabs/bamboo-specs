@@ -3,7 +3,7 @@ version: 2
 plan:
   project-key: MAR
   key: ROCKET
-  name: Build the rockets
+  name: Build the MarcosTest proyect
 
 # List of plan's stages and jobs
 stages:
