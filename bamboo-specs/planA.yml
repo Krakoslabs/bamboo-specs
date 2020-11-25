@@ -12,7 +12,6 @@ stages:
         - Buildwebsite1
         - Buildwebsite2
   - Wait for confirmation:
-      manual: true
       jobs:
         - Waitforconfirmation1
         - Waitforconfirmation2
