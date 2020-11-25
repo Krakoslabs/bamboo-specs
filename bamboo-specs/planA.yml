@@ -9,7 +9,7 @@ plan:
 stages:
   - Build the website:
       jobs:
-        - Buildwebsite1
+        - Buildwebsite12
         - Buildwebsite2
   - Wait for confirmation:
       jobs:
@@ -20,7 +20,7 @@ stages:
         - Cleanafterwards1
         - Cleanafterwards2
 
-Buildwebsite1:
+Buildwebsite12:
   tasks:
   - script:
       interpreter: SHELL
