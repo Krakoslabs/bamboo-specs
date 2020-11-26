@@ -18,5 +18,5 @@ Buildwebsite1:
   - script:
       interpreter: SHELL
       file: test.sh
-      argument: test1 test2
+      argument: alain marcos
       working-dir: scripts

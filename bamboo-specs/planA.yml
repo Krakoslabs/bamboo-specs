@@ -22,25 +22,33 @@ stages:
 
 Buildwebsite1:
   tasks:
-  - script:
-      interpreter: SHELL
-      file: scripts/test.sh
-      argument: marcos alex
+    - script:
+        interpreter: SHELL
+        file: scripts/test.sh
+        argument: marcos alex
+    - script: |
+        sleep 10
 
 Buildwebsite2:
   tasks:
     - script: |
         echo "Buildwebsite2"
+    - script: |
+        sleep 10
 
 Waitforconfirmation1:
   tasks:
     - script: |
         echo "Waitforconfirmation1"
+    - script: |
+        sleep 15
 
 Waitforconfirmation2:
   tasks:
     - script: |
         echo "Waitforconfirmation2"
+    - script: |
+        sleep 15
 
 Cleanafterwards1:
   tasks:
