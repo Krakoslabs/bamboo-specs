@@ -3,7 +3,7 @@ version: 2
 triggers: []
 plan:
   project-key: TESTFIRSTSPECS
-  name: Test my first specs
+  name: 1-Test my first specs
   key: TN
 
 stages:
