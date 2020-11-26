@@ -12,6 +12,8 @@ stages:
         - Buildwebsite1
 
 Buildwebsite1:
+  requirements:
+    - release
   tasks:
   - script:
       interpreter: SHELL
