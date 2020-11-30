@@ -1,0 +1,13 @@
+---
+version: 2
+plan:
+  key: TESTFIRSTSPECS-BUIL
+plan-permissions:
+- users:
+  - admin
+  permissions:
+  - view
+  - edit
+  - build
+  - clone
+  - admin
