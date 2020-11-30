@@ -9,7 +9,24 @@
 ---
 version: 2
 plan:
-  key: '.*'
+  key: TESTFIRSTSPECS-BUIL
+plan-permissions:
+- users:
+  - admin
+  permissions:
+  - view
+  - edit
+  - build
+  - clone
+  - admin
+- groups:
+  - bamboo-users
+  permissions:
+  - view
+---
+version: 2
+plan:
+  key: TESTFIRSTSPECS-RACD
 plan-permissions:
 - users:
   - admin
