@@ -6,7 +6,7 @@ plan:
   name: BuildAnsibleDocker
 stages:
 - Default Stage:
-    manual: true
+    manual: false
     final: false
     jobs:
     - Build and Push ansible docker image
