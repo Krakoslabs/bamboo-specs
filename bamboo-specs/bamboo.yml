@@ -3,4 +3,6 @@
 ---
 !include '2-TestMySecondSpecs.yml'
 ---
-!include '3-BuildandPushAnsibleImage.yml'
+!include 'dockers/3-BuildandPushAnsibleImage.yml'
+---
+!include 'dockers/3-permissions.yml'
