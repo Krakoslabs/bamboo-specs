@@ -7,4 +7,28 @@
 ---
 !include 'dockers/4-RunAnsibleCodeDocker.yml'
 ---
-!include 'dockers/DockerPermissions.yml'
+version: 2
+plan:
+  key: TESTFIRSTSPECS-BUIL
+plan-permissions:
+- users:
+  - admin
+  permissions:
+  - view
+  - edit
+  - build
+  - clone
+  - admin
+---
+version: 2
+plan:
+  key: TESTFIRSTSPECS-RACD
+plan-permissions:
+- users:
+  - admin
+  permissions:
+  - view
+  - edit
+  - build
+  - clone
+  - admin
