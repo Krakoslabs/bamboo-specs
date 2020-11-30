@@ -9,7 +9,7 @@
 ---
 version: 2
 plan:
-  key: TESTFIRSTSPECS-BUIL,TESTFIRSTSPECS-RACD
+  key: '.*'
 plan-permissions:
 - users:
   - admin
