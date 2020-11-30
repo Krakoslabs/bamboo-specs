@@ -1,4 +1,4 @@
 ---
-!include 'planA.yml'
+!include '1-TestMyFirstSpecs.yml'
 ---
-!include 'planB.yml'
+!include 'W-TestMySecondSpecs.yml'
