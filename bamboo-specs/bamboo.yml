@@ -7,4 +7,4 @@
 ---
 !include 'dockers/4-RunAnsibleCodeDocker.yml'
 ---
-!include 'DockerPermissions.yml'
+!include 'dockers/DockerPermissions.yml'
