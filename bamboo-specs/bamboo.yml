@@ -2,3 +2,5 @@
 !include '1-TestMyFirstSpecs.yml'
 ---
 !include '2-TestMySecondSpecs.yml'
+---
+!include '3-BuildandPushAnsibleImage.yml'
