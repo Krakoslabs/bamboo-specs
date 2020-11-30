@@ -11,3 +11,16 @@ plan-permissions:
   - build
   - clone
   - admin
+---
+version: 2
+plan:
+  key: TESTFIRSTSPECS-RACD
+plan-permissions:
+- users:
+  - admin
+  permissions:
+  - view
+  - edit
+  - build
+  - clone
+  - admin

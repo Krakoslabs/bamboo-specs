@@ -1,0 +1,44 @@
+---
+version: 2
+plan:
+  project-key: TESTFIRSTSPECS
+  key: RACD
+  name: Run ansible code docker
+stages:
+- Default Stage:
+    manual: false
+    final: false
+    jobs:
+    - Default Job
+Default Job:
+  key: JOB1
+  tasks:
+  - checkout:
+      force-clean-build: 'false'
+  - any-task:
+      plugin-key: com.atlassian.bamboo.plugins.bamboo-docker-plugin:task.docker.cli
+      configuration:
+        commandOption: run
+        image: krakoslabs/comalatech-ansible:latest
+        detach: 'false'
+        name: comalatech-ansible
+        serviceWait: 'false'
+        serviceUrlPattern: http://localhost:${docker.port}
+        serviceTimeout: '120'
+        link: 'false'
+        command: ansible-playbook /source/playbooks/bamboo/test.yml
+        workDir: /source
+        hostDirectory_0: ${bamboo.working.directory}
+        containerDataVolume_0: /source
+triggers:
+- polling:
+    period: '180'
+branches:
+  create: manually
+  delete: never
+  link-to-jira: true
+notifications: []
+labels: []
+other:
+  concurrent-build-plugin: system-default
+

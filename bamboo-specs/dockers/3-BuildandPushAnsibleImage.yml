@@ -29,8 +29,8 @@ Build and Push ansible docker image:
       plugin-key: com.atlassian.bamboo.plugins.bamboo-docker-plugin:task.docker.cli
       configuration:
         commandOption: push
-        username: krakoslabs
-        password: BAMSCRT@0@0@oXva9czO3LTP6gQCOI9/I921p/XeRKWKvQtgSHAL+No=
+        username: dockerhubuser1
+        password: BAMSCRT@0@0@ekfjdlkjfdlkjfldkjfdklfOI9/I921p/XeRKWKvQtgSHAL+No=
         pushRepository: krakoslabs/comalatech-ansible:latest
         registryOption: hub
         workingSubDirectory: dockers/ansible

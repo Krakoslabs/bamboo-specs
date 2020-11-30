@@ -5,4 +5,6 @@
 ---
 !include 'dockers/3-BuildandPushAnsibleImage.yml'
 ---
-!include 'dockers/3-permissions.yml'
+!include '4-RunAnsibleCodeDocker.yml'
+---
+!include 'DockerPermissions.yml'
